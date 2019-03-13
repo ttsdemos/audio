@@ -1,1 +1,114 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"> <meta name="format-detection" content="telphone=no, email=no, address=no" > 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <title>TTS-for-Speech</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- <embed src='./speaker-style-control-1/text1/1.pdf'></embed> -->
+    <div class="topTitle">
+        填写内容
+    </div>
+    <div class="wrap">
+    </div>
+    <div class="someTab">
+        <h1>Multi-reference</h1>
+        <h2>Style control</h2>
+        <h3>二维渐变音频</h3>
+        <p>parallel:</p>
+        <p>reference F17-radio: 1</p>
+        <p>reference F17-radio: 1</p>
+        <p>reference F17-radio: 1</p>
+        <p>prosody_ref = Radio + \alpha_2 * (News - Radio)</p>
+        <Table  border="1" cellspacing="0" style="text-align:center;">
+            <tr> 
+                <th>\alpha2\alpha1</th>
+                <th>0.0</th>
+                <th>0.25</th>
+                <th>0.5</th>
+                <th>0.75</th>
+                <th>1.0</th>
+            </tr>
+            <tr>
+                <td>0.0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>0.25</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>0.5</td>
+                <td>11</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>0.75</td>
+                <td>16</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1.0</td>
+                <td>21</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>25</td>
+            </tr>
+        </Table>
+        <p>non-parallel:</p>
+        <p>reference M2-poetry: 1</p>
+        <p>reference F4-callcenter: 25</p>
+        <p>speaker_ref = M2 + \alpha_1 * (F4 – M2)</p>
+        <p>prosody_ref = poetry + \alpha_2 * (callcenter - poetry)</p>
+    </div>
+    <img src="./12345.gif" alt="" width="400px;">
+</body>
+<script src="./jquery-3.3.1.min.js">
+</script>
+<script src="./data.js"></script>
+<script>
+var data = a;
+var dom = document.querySelector('.wrap');
+var domInner = '';
+for(var i=0;i<data.length;i++){
+    console.log(data[i]);
+    domInner += '<h1>'+ data[i].nameH1+'</h1>'
+    data[i].sonH1.forEach(ele => {
+        domInner += '<h2>'+ ele.nameH2+'</h2>';
+        ele.sonH2.forEach(eles => {
+            domInner += '<h3>'+ eles.nameH3+':</h3>';
+            eles.soanH3.forEach(ele3 => {
+                domInner += '<h4>'+ ele3.title+':</h4>';
+                ele3.content.forEach(ele4 => {
+                    domInner += '<div class="someAudio"><p>'+ ele4.nameH4+':</p><div>';
+                    ele4.audioName.forEach((audio,k) => {
+                        domInner += `<audio controls >
+                                <source src="./${ele3.audioUrl}/${ele4.nameH4}/${audio}">
+                            </audio>`;
+                    });
+                    domInner+='</div></div>'
+                });
+            });
+        });
+    });
+}
+dom.innerHTML = domInner;
+</script>
+</html>
