@@ -8,23 +8,195 @@
 </head>
 <body>
     <!-- <embed src='./speaker-style-control-1/text1/1.pdf'></embed> -->
-    <div class="topTitle">
+    <!-- <div class="topTitle">
         填写内容
+    </div> -->
+    <h1>Single-reference</h1>
+    <h2>Speaker</h2>
+    <h3>Style transfer</h3>
+    <h4>比较org与proposed性能音频</h4>
+    <div class="someAudio">
+        <p>reference</p>
+        <audio src="./speaker-style-transfer-1/reference/1.wav" controls></audio> 
+        <audio src="./speaker-style-transfer-1/reference/2.wav" controls></audio>
+        <audio src="./speaker-style-transfer-1/reference/3.wav" controls></audio> 
+        <audio src="./speaker-style-transfer-1/reference/4.wav" controls></audio>
     </div>
-    <div class="wrap">
+    <div class="someAudio">
+        <p>no_pairwise</p>
+        <audio src="./speaker-style-transfer-1/no-pairwise/1.wav" controls></audio> 
+        <audio src="./speaker-style-transfer-1/no-pairwise/2.wav" controls></audio>
+        <audio src="./speaker-style-transfer-1/no-pairwise/3.wav" controls></audio> 
+        <audio src="./speaker-style-transfer-1/no-pairwise/4.wav" controls></audio>
+    </div> 
+    <div class="someAudio">
+        <p>pairwise</p>
+        <audio src="./speaker-style-transfer-1/pairwise/1_0.wav" controls></audio> 
+        <audio src="./speaker-style-transfer-1/pairwise/2_0.wav" controls></audio>
+        <audio src="./speaker-style-transfer-1/pairwise/3_0.wav" controls></audio> 
+        <audio src="./speaker-style-transfer-1/pairwise/4_0.wav" controls></audio>
     </div>
+    <h4>standard style transfer音频</h4>
+    <div class="someAudio">
+        <p>reference</p>
+        <audio src="./speaker-style-transfer-2/reference/reference1.wav" controls></audio> 
+        <audio src="./speaker-style-transfer-2/reference/reference2.wav" controls></audio>
+        <audio src="./speaker-style-transfer-2/reference/reference3.wav" controls></audio> 
+        <audio src="./speaker-style-transfer-2/reference/reference4.wav" controls></audio>
+    </div>
+    <div class="someAudio">
+        <p>text1</p>
+        <audio src="./speaker-style-transfer-2/reference1/1.wav" controls></audio> 
+        <audio src="./speaker-style-transfer-2/reference1/2.wav" controls></audio>
+        <audio src="./speaker-style-transfer-2/reference1/3.wav" controls></audio> 
+    </div>
+    <div class="someAudio">
+        <p>text2</p>
+        <audio src="./speaker-style-transfer-2/reference2/1.wav" controls></audio> 
+        <audio src="./speaker-style-transfer-2/reference2/2.wav" controls></audio>
+        <audio src="./speaker-style-transfer-2/reference2/3.wav" controls></audio> 
+    </div>
+    <div class="someAudio">
+        <p>text3</p>
+        <audio src="./speaker-style-transfer-2/reference3/1.wav" controls></audio> 
+        <audio src="./speaker-style-transfer-2/reference3/2.wav" controls></audio>
+        <audio src="./speaker-style-transfer-2/reference3/3.wav" controls></audio> 
+    </div>
+    <div class="someAudio">
+        <p>text4</p>
+        <audio src="./speaker-style-transfer-2/reference4/1.wav" controls></audio> 
+        <audio src="./speaker-style-transfer-2/reference4/2.wav" controls></audio>
+        <audio src="./speaker-style-transfer-2/reference4/3.wav" controls></audio> 
+    </div>
+    <h3>Style control</h3>
+    <div class="imageDiv">
+        <p>mel谱渐变gif:</p>
+        <img src="./12345.gif" alt="">
+        <img src="./0_2.gif" alt="">
+        <img src="./0_3.gif" alt="">
+    </div>   
+    <h4>speaker1->…->speaker2渐变音频</h4>
+    <div class="someAudio">
+        <p>text1</p>
+        <audio src="./speaker-style-control-2/text1/1.wav" controls></audio> 
+        <audio src="./speaker-style-control-2/text1/2_0.wav" controls></audio>
+        <audio src="./speaker-style-control-2/text1/3_0.wav" controls></audio>
+        <audio src="./speaker-style-control-2/text1/4_0.wav" controls></audio> 
+        <audio src="./speaker-style-control-2/text1/5.wav" controls></audio> 
+    </div>
+    <div class="someAudio">
+        <p>text2</p>
+        <audio src="./speaker-style-control-2/text2/1.wav" controls></audio> 
+        <audio src="./speaker-style-control-2/text2/2_0.wav" controls></audio>
+        <audio src="./speaker-style-control-2/text2/3_0.wav" controls></audio>
+        <audio src="./speaker-style-control-2/text2/4_0.wav" controls></audio> 
+        <audio src="./speaker-style-control-2/text2/5.wav" controls></audio> 
+    </div>
+    <div class="someAudio">
+        <p>text3</p>
+        <audio src="./speaker-style-control-2/text3/1.wav" controls></audio> 
+        <audio src="./speaker-style-control-2/text3/2_0.wav" controls></audio>
+        <audio src="./speaker-style-control-2/text3/3_0.wav" controls></audio>
+        <audio src="./speaker-style-control-2/text3/4_0.wav" controls></audio> 
+        <audio src="./speaker-style-control-2/text3/5.wav" controls></audio>  
+    </div>
+    <h3>Random sampling</h3>
+    <h4>随机音频</h4>
+    <div class="someAudio">
+        <audio src="./speaker-random/sad_0_0.wav" controls></audio>
+        <audio src="./speaker-random/sad_1_0.wav" controls></audio>
+        <audio src="./speaker-random/sad_2_0.wav" controls></audio>
+        <audio src="./speaker-random/sad_3_0.wav" controls></audio>
+        <audio src="./speaker-random/sad_4_0.wav" controls></audio>
+        <audio src="./speaker-random/sad_5_0.wav" controls></audio>
+        <audio src="./speaker-random/sad_7_0.wav" controls></audio>
+    </div>
+    <h3>Few shot/one shot</h3>
+    <h4>One shot音频</h4>
+    <!-- Success1 -->
+    <h5>Success:</h5>
+    <div class="someAudio">
+        <audio src="./speaker-oneshot/success1/1.wav" controls></audio>
+        <audio src="./speaker-oneshot/success1/reference.wav" controls></audio>
+    </div>
+    <div class="someAudio">
+        <audio src="./speaker-oneshot/success2/1.wav" controls></audio>
+        <audio src="./speaker-oneshot/success2/reference.wav" controls></audio>
+    </div>
+    <h5>Fail:</h5>
+    <div class="someAudio">
+        <audio src="./speaker-oneshot/fail1/1.wav" controls></audio>
+        <audio src="./speaker-oneshot/fail1/reference.wav" controls></audio>
+    </div>
+    <div class="someAudio">
+        <audio src="./speaker-oneshot/fail2/1.wav" controls></audio>
+        <audio src="./speaker-oneshot/fail2/reference.wav" controls></audio>
+    </div>
+    <h4>Few shot音频</h4>
+    <!-- 不限音频顺序，但要保证同列一致 -->
+    <div class="someAudio">
+        <audio src="./speaker-fewshot/fail2/reference.wav" controls></audio>
+    </div>
+    <h5>10-500</h5> 
+    <div class="someAudio">
+        <audio src="./speaker-fewshot/fail2/fewshot-10-500/angry_21_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-10-500/angry_8_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-10-500/fear_11_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-10-500/fear_17_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-10-500/happy_17_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-10-500/happy_6_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-10-500/sad_0_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-10-500/sad_15_0.wav" controls></audio>
+    </div>
+    <h5>20-500</h5> 
+    <div class="someAudio">
+        <audio src="./speaker-fewshot/fail2/fewshot-20-500/angry_21_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-20-500/angry_8_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-20-500/fear_11_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-20-500/fear_17_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-20-500/happy_17_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-20-500/happy_6_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-20-500/sad_0_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-20-500/sad_15_0.wav" controls></audio>
+    </div>
+    <h5>50-500</h5>
+    <div class="someAudio">
+        <audio src="./speaker-fewshot/fail2/fewshot-50-500/angry_21_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-50-500/angry_8_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-50-500/fear_11_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-50-500/fear_17_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-50-500/happy_17_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-50-500/happy_6_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-50-500/sad_0_0.wav" controls></audio>
+        <audio src="./speaker-fewshot/fail2/fewshot-50-500/sad_15_0.wav" controls></audio>
+    </div>
+    <h3>Emotion（暂无音频）</h3>
+    <h4>Style control</h4>
+    <div class="someAudio">
+        <!-- 1.	Emotion1->…->emotion2->…->emotion7渐变音频 -->
+    </div>
+    <h4>Random sampling</h4>
+    <div  class="someAudio">
+            <!-- 1.	音频 -->
+    </div>
+    <h3>Prosody（暂无音频）</h3>
+    <h4>Style control</h4>
+    <div class="someAudio">
+            <!-- 1.	Pros1->…->pros2->…->pros5渐变音频 -->
+    </div>
+
     <div class="someTab">
         <h1>Multi-reference</h1>
         <h2>Style control</h2>
         <h3>二维渐变音频</h3>
-        <p>parallel:</p>
+        <h4>parallel:</h4>
         <p>reference F17-radio: 1</p>
         <p>reference F17-radio: 1</p>
         <p>reference F17-radio: 1</p>
         <p>prosody_ref = Radio + \alpha_2 * (News - Radio)</p>
         <Table  border="1" cellspacing="0" style="text-align:center;">
             <tr> 
-                <th>\alpha2\alpha1</th>
+                <th>\alpha2 <br>\alpha1</th>
                 <th>0.0</th>
                 <th>0.25</th>
                 <th>0.5</th>
@@ -33,82 +205,201 @@
             </tr>
             <tr>
                 <td>0.0</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/1_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/2_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/3_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/4_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/5_0.wav" controls></audio>
+                </td>
             </tr>
             <tr>
                 <td>0.25</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td>10</td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/6_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/7_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/8_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/9_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/10_0.wav" controls></audio>
+                </td>
             </tr>
             <tr>
                 <td>0.5</td>
-                <td>11</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/11_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/12_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/13_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/14_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/15_0.wav" controls></audio>
+                </td>
             </tr>
             <tr>
                 <td>0.75</td>
-                <td>16</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/16_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/17_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/18_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/19_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/20_0.wav" controls></audio>
+                </td>
             </tr>
             <tr>
                 <td>1.0</td>
-                <td>21</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>25</td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/21_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/22_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/23_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/24_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/parallel-gezi@radio-junhao@news/25_0.wav" controls></audio>
+                </td>
             </tr>
         </Table>
-        <p>non-parallel:</p>
+        <h4>non-parallel:</h4>
         <p>reference M2-poetry: 1</p>
         <p>reference F4-callcenter: 25</p>
         <p>speaker_ref = M2 + \alpha_1 * (F4 – M2)</p>
         <p>prosody_ref = poetry + \alpha_2 * (callcenter - poetry)</p>
+        <Table  border="1" cellspacing="0" style="text-align:center;">
+            <tr> 
+                <th>\alpha2<br/>\alpha1</th>
+                <th>0.0</th>
+                <th>0.25</th>
+                <th>0.5</th>
+                <th>0.75</th>
+                <th>1.0</th>
+            </tr>
+            <tr>
+                <td>0.0</td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/1_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/2_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/3_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/4_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/5_0.wav" controls></audio>
+                </td>
+            </tr>
+            <tr>
+                <td>0.25</td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/6_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/7_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/8_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/9_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/10_0.wav" controls></audio>
+                </td>
+            </tr>
+            <tr>
+                <td>0.5</td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/11_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/12_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/13_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/14_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/15_0.wav" controls></audio>
+                </td>
+            </tr>
+            <tr>
+                <td>0.75</td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/16_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/17_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/18_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/19_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/20_0.wav" controls></audio>
+                </td>
+            </tr>
+            <tr>
+                <td>1.0</td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/21_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/22_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/23_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/24_0.wav" controls></audio>
+                </td>
+                <td>
+                    <audio src="./multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/25_0.wav" controls></audio>
+                </td>
+            </tr>
+        </Table>
     </div>
-    <img src="./12345.gif" alt="" width="400px;">
 </body>
-<script src="./jquery-3.3.1.min.js">
-</script>
-<script src="./data.js"></script>
-<script>
-var data = a;
-var dom = document.querySelector('.wrap');
-var domInner = '';
-for(var i=0;i<data.length;i++){
-    console.log(data[i]);
-    domInner += '<h1>'+ data[i].nameH1+'</h1>'
-    data[i].sonH1.forEach(ele => {
-        domInner += '<h2>'+ ele.nameH2+'</h2>';
-        ele.sonH2.forEach(eles => {
-            domInner += '<h3>'+ eles.nameH3+':</h3>';
-            eles.soanH3.forEach(ele3 => {
-                domInner += '<h4>'+ ele3.title+':</h4>';
-                ele3.content.forEach(ele4 => {
-                    domInner += '<div class="someAudio"><p>'+ ele4.nameH4+':</p><div>';
-                    ele4.audioName.forEach((audio,k) => {
-                        domInner += `<audio controls >
-                                <source src="./${ele3.audioUrl}/${ele4.nameH4}/${audio}">
-                            </audio>`;
-                    });
-                    domInner+='</div></div>'
-                });
-            });
-        });
-    });
-}
-dom.innerHTML = domInner;
-</script>
+
 </html>

@@ -15,9 +15,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color:#c
 html,body{
     width: 100%;
     height: auto;
-    padding: 10px;
+    /* padding: 10px; */
     box-sizing: border-box;
     background: #fcfcfc;
+    overflow-x: hidden;
 }
 .topTitle{
     width: 100%;
@@ -31,31 +32,31 @@ html,body{
     height: auto;
 }
 h1{
-    font-size: 32px;
+    font-size: 30px;
     line-height: 42px;
     font-weight: 600;
-    background: #eee;
+    background: #fcfcfc;
 }
 h2{
-    font-size: 28px;
+    font-size: 26px;
     line-height: 42px;
     font-weight: 520;
-    background: #eee;
+    background: #fcfcfc;
 }
 h3{
-    font-size: 22px;
-    line-height: 42px;
+    font-size: 20px;
+    line-height: 38px;
     font-weight: 400;
-    background: #eee;
+    background: #fcfcfc;
 }
 h4{
     text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-    background: #ccc;
+    font-size: 16px;
+    line-height: 38px;
+    background: #eee;
     margin-bottom: 10px;
 }
-.someAudio{
+.someAudio,.imageDiv{
     width: 100%;
     overflow: hidden;
     padding-top: 10px;
@@ -65,11 +66,12 @@ h4{
     flex-direction: row;
     padding-left: 10px;
 }
-.someAudio p{
+.someAudio p,.imageDiv p{
     /* float: left; */
-    width: 130px;
+    width: auto;
     font-size: 18px;
     line-height: 40px;
+    padding-right: 10px;
 }
 .someAudio div{
     /* float: right; */
@@ -82,7 +84,13 @@ h4{
     width: 100%;
     padding-left:4px;
 }
-
+.imageDiv img{
+    width: auto;
+    height:300px;
+}
+.someTab{
+    line-height: 1.8;
+}
 .someTab table{
     display: inline-block;
     text-align: center;
@@ -90,4 +98,7 @@ h4{
 
 table th{
     width: 100px;
+}
+table audio{
+    width: 240px;
 }
