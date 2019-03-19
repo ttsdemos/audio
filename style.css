@@ -102,3 +102,13 @@ table th{
 table audio{
     width: 240px;
 }
+
+.lineTab{position: relative;}
+.lineTab .hrline{
+    position: absolute;
+    left: -8px;
+    width: 82px;
+    transform: rotate(35deg);
+    color: #111;
+    transform-origin:center center;
+}
